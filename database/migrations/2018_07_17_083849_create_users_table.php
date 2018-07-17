@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('gender')->nullable();
             $table->string('birth_day')->nullable();
             $table->boolean('test')->nullable();
+            $table->boolean('skils')->nullable();
             $table->rememberToken('token');
             $table->timestamps();
         });
