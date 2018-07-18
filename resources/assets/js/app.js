@@ -7,16 +7,20 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
+$("#languages #none").click(function () {
+    if ($("#languages #none").is(':checked')) {
+        $("#languages input[type='checkbox']").each(function () {
+            $(this).prop("checked", false);
+            $(this).prop("disabled", true);
+        });
+        $(this).prop("checked", true);
+        $(this).prop("disabled", false);
+    }else{
+        $("#languages input[type='checkbox']").each(function () {
+            $(this).prop("disabled", false);
+        });
+    }
 });
+
+
+
