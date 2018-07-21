@@ -9,7 +9,7 @@
         <h3 class="text-center">{{$user->name}}</h3>
             <hr>
             <br>
-        <p><b>Gymino metai: </b>{{$user->birth_day}}</p>
+        <p><b>Gimino metai: </b>{{$user->birth_day}}</p>
             <hr>
             <br>
         <p><b>Litys: </b>{{$user->gender}}</p>
