@@ -22,6 +22,6 @@ Route::post('/test/{id}', 'UsersController@storeTest')->name('storeTest');
 Route::get('/fin/{id}', 'UsersController@createFinish')->name('createFin');
 Route::get('/lang/{id}', 'UsersController@createLang')->name('createLang');
 Route::post('/lang/{id}', 'UsersController@storeLang')->name('storeLang');
-Route::get('/file/{id}', 'UsersController@createfile')->name('createFile');
+Route::get('/file/{id}', 'UsersController@createFile')->name('createFile');
 Route::post('/file/{id}', 'UsersController@storeFile')->name('storeFile');
 Route::get('/show/{id}', 'UsersController@show')->name('showUser');

@@ -1,20 +1,22 @@
 @extends('layouts.main')
 @section('content')
-    <form class="text-center" action="{{route('storeTest', $id)}}" method="post">
+    <form class="text-center form" action="{{route('storeTest', $user->id)}}" method="post">
         @csrf()
         <div id="test">
-            <h2>Ar domitės programavimu?</h2>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="test" id="exampleRadios1" value=1 checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Taip
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="test" id="exampleRadios2" value=0>
-                <label class="form-check-label" for="exampleRadios2">
-                    Ne
-                </label>
+            <h2 class="title">Ar domitės programavimu?</h2>
+            <div class="form-row mb-5">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="test" id="exampleRadios1" value=1 checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Taip
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="test" id="exampleRadios2" value=0>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Ne
+                    </label>
+                </div>
             </div>
         </div>
         @if($errors->has('test'))

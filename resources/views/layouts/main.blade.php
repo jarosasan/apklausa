@@ -14,10 +14,10 @@
 
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid top">
     @include('nav')
 </div>
-<div class="container">
+<div class="container content">
     @yield('content')
 </div>
 

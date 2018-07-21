@@ -31,7 +31,7 @@ class User extends Authenticatable
         return $this->belongsToMany(Language::class, 'user_language');
     }
 
-    public function image()
+    public function images()
     {
         return $this->hasOne('App\Image');
     }

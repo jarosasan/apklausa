@@ -1,6 +1,7 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // Variables
 @import "variables";
@@ -8,8 +9,51 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+.top{
+  padding: 0;
+}
+.content{
+  margin: 5rem auto;
+  width: 30rem;
+  .form{
+    font-size: 1.5em;
+    .title{
+      margin-bottom: 50px;
+    }
+    input{
+      margin-bottom: 30px;
+    }
+    input[type=checkbox]{
+      -ms-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      padding: 5px;
+    }
+    .form-row{
+      justify-content: space-evenly;
+    }
+    .custom-file{
+      margin-bottom: 30px;
+      font-size: 1rem !important;
+      text-align: left;
+    }
+    .btn{
+      width:100%;
+    }
+  }
+  .card{
+    margin: auto;
+  }
+}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.summary{
+  .image{
+    text-align: center;
+    height: 300px;
+    overflow:hidden;
+    img{
+      height: 100%;
+    }
+  }
 }
